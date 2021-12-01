@@ -9,7 +9,8 @@ module.exports = (sequelize, DataTypes) => {
   };
   Student.init({
     name: DataTypes.STRING,
-    rollNo: DataTypes.INTEGER
+    rollNo: DataTypes.INTEGER,
+    class: DataTypes.STRING  
   }, {
     sequelize,
     modelName: 'student',

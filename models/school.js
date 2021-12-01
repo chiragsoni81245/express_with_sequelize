@@ -8,7 +8,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   School.init({
-    name: DataTypes.STRING
+    name: DataTypes.STRING,
+    address: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'school',

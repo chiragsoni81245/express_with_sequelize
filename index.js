@@ -12,7 +12,7 @@ app.use('/api/student', student_router)
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
-    sequelize.sync({force: true}); 
+    sequelize.sync({alter: true}); 
     // In production this will only be used for the initial schema creation 
     // but here is development database will be scyned everytime we restart application
     // {force: true} will drop every existing table first 
